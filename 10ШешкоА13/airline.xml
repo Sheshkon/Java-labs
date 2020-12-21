@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<airlines>
+    <airline ID="478147">
+        <destination>New York</destination>
+        <time>13:24</time>
+        <type>Boeing</type>
+        <day>FRIDAY</day>
+    </airline>
+    <airline ID="578147">
+        <destination>Moscow</destination>
+        <time>17:30</time>
+        <type>Helicopter</type>
+        <day>SATURDAY</day>
+    </airline>
+    <airline ID="748545">
+        <destination>Hong Kong</destination>
+        <time>11:30</time>
+        <type>Jet</type>
+        <day>TUESDAY</day>
+    </airline>
+    <airline ID="548847">
+        <destination>Turkey</destination>
+        <time>17:30</time>
+        <type>Rotorcraft</type>
+        <day>SATURDAY</day>
+    </airline>
+    <airline ID="145785">
+        <destination>Brazil</destination>
+        <time>00:00</time>
+        <type>Boeing</type>
+        <day>MONDAY</day>
+    </airline>
+</airlines>

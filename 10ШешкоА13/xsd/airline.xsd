@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="airlines" type="airlines"/>
+
+  <xs:complexType name="airlines">
+    <xs:sequence>
+      <xs:element name="airline" type="airline" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="airline">
+    <xs:sequence>
+      <xs:element name="destination" type="xs:string" minOccurs="0"/>
+      <xs:element name="time" type="xs:string" minOccurs="0"/>
+      <xs:element name="type" type="type" minOccurs="0"/>
+      <xs:element name="day" type="dayOfWeek" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="ID" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Jet"/>
+      <xs:enumeration value="Boeing"/>
+      <xs:enumeration value="Helicopter"/>
+      <xs:enumeration value="Rotorcraft"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="dayOfWeek">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SUNDAY"/>
+      <xs:enumeration value="MONDAY"/>
+      <xs:enumeration value="TUESDAY"/>
+      <xs:enumeration value="WEDNESDAY"/>
+      <xs:enumeration value="THURSDAY"/>
+      <xs:enumeration value="FRIDAY"/>
+      <xs:enumeration value="SATURDAY"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

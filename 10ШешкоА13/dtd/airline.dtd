@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT airlines (airline)>
+        <!ELEMENT airline (destination,time,flight_number,type,day)>
+        <!ELEMENT destination (#PCDATA)>
+        <!ELEMENT time (#PCDATA)>
+        <!ELEMENT flight_number (#PCDATA)>
+        <!ELEMENT type (#PCDATA)>
+        <!ELEMENT day (#PCDATA)>
+        <!ATTLIST airline
+           ID  #REQUIRED>
